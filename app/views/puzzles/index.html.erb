@@ -1,0 +1,11 @@
+<% content_for :title, "Puzzles" %>
+
+<h1>Today's Puzzle</h1>
+
+<div id="puzzles">
+    <%= render @puzzle %>
+    <p>
+      <%= link_to "Show this puzzle", @puzzle %>
+    </p>
+</div>
+

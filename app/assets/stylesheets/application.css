@@ -1,0 +1,97 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+        background-color:rgb(0, 0, 0);
+        color: #00e600;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+}
+
+input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+height: 1.8rem;
+width: 10rem; ;
+}
+
+input[type=submit]{
+        margin-top: 10px;
+        padding-bottom: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    /* text-shadow: 10000px;
+    box-shadow: 10000px; */
+}
+
+a:link,a:visited{
+    color: #6fdf6f;
+}
+
+.right{
+background-color: green;
+color: white;
+}
+
+.wrong{
+    background-color: grey;
+    color: white;
+}
+
+.relocate{
+    background-color:#B4A03C;
+    color: white;
+}
+
+
+
+.wrong,
+.correct,
+.misplaced,
+.letters>input {
+  text-transform: uppercase;
+  font-size: 2rem;
+  display: inline-block;
+  border: thin solid black;
+  margin: .2rem;
+  padding: .2rem;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+}
+
+.wrong {
+  background-color: darkslategray;
+  color: white;
+}
+
+.correct {
+  background-color: darkgreen;
+  color: white;
+}
+
+.misplaced {
+  background-color: orange;
+  color: #ffffff;
+}
+
+#user_remember_me {
+    width: 1rem;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    margin-top: revert;
+}

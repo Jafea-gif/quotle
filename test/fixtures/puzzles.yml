@@ -1,0 +1,18 @@
+# == Schema Information
+#
+# Table name: puzzles
+#
+#  id               :integer          not null, primary key
+#  author           :string
+#  publication_date :date
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#
+
+one:
+  publication_date: 2024-11-06
+  author: MyString
+
+two:
+  publication_date: 2024-11-06
+  author: MyString

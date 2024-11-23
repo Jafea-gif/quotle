@@ -1,0 +1,21 @@
+<%= form_with(model: @word.guesses.new) do |f| %>
+  <%=f.hidden_field :user_id, value: current_user&.id  %> 
+  <%=f.hidden_field :word_id, value: @word.id  %> 
+
+<%=f.hidden_field :word_id,value:@word.id %> 
+
+<br><br><br><br>
+<br><br><br><br>
+
+<div data-controller="quotle">
+<div class="letters"> 
+ <% @word.name.split('')&.each_with_index do |letter, index| %>
+  <%=f.text_field :letter, maxlength: 1, 'data-quotle-target'=>'input' ,"data-action"=>"quotle#autoAdvance" %>
+  <% end %>
+  <%=f.hidden_field :input_guess, 'data-quotle-target'=>'output'  %> 
+</div>
+    <%= f.submit value="Guess", 'data-action'=>'click->quotle#transferWord' %>
+  </div>
+<% end %>
+
+

@@ -1,0 +1,19 @@
+<div id="<%= dom_id puzzle %>">
+
+
+<div id="words">
+  <% @puzzle.words.order(:order).each do |word|
+    if word.guessed? || stop_words.include?(word) %>
+    <%= word.name %>
+    <%else%> 
+    <%=link_to "Guess", word, class: 'guess_button' %>
+    <%end
+  end %>
+</div>
+
+  <p>
+    <strong>Author:</strong>
+    <%= puzzle.author %>
+  </p>
+
+</div>

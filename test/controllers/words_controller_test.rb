@@ -9,5 +9,4 @@ class WordsControllerTest < ActionDispatch::IntegrationTest
     get word_url(@word)
     assert_response :success
   end
-  
 end

@@ -14,5 +14,4 @@ class PuzzlesControllerTest < ActionDispatch::IntegrationTest
     get puzzle_url(@puzzle)
     assert_response :success
   end
-  
 end

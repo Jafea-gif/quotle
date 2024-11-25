@@ -23,8 +23,6 @@
 #
 one:
   email: 'test@test.com'
-  password: 'fakepassword'
 
 two: 
   email: 'nonexistent@test.com'
-  password: ''

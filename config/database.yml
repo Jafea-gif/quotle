@@ -14,18 +14,13 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  adapter: sqlite3
+  adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
-  database: storage/test.sqlite3
+  host: <%= Rails.application.credentials.database.fetch(:test).fetch(:host) %>
+  database: <%= Rails.application.credentials.database.fetch(:test).fetch(:name) %>
+  username: <%= Rails.application.credentials.database.fetch(:test).fetch(:username) %>
+  password: <%= Rails.application.credentials.database.fetch(:test).fetch(:password) %>
 
-
-# SQLite3 write its data on the local filesystem, as such it requires
-# persistent disks. If you are deploying to a managed service, you should
-# make sure it provides disk persistence, as many don't.
-#
-# Similarly, if you deploy your application as a Docker container, you must
-# ensure the database is located in a persisted volume.
 production:
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>

@@ -8,6 +8,8 @@
 #     MovieGenrefind_or_create_by!(name: genre_name)
 #   end
 
+User.create(email: 'test@test.com', password: 'fakepassword')
+
 quotes = [ [ "Thomas Edison", "Genius is one percent inspiration and ninety-nine percent perspiration" ],
 [ "Yogi Berra", "You can observe a lot just by watching" ],
 [ "Abraham Lincoln", "A house divided against itself cannot stand" ],

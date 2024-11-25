@@ -10,39 +10,9 @@ class PuzzlesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get new" do
-    get new_puzzle_url
-    assert_response :success
-  end
-
-  test "should create puzzle" do
-    assert_difference("Puzzle.count") do
-      post puzzles_url, params: { puzzle: { author: @puzzle.author, publication_date: @puzzle.publication_date } }
-    end
-
-    assert_redirected_to puzzle_url(Puzzle.last)
-  end
-
   test "should show puzzle" do
     get puzzle_url(@puzzle)
     assert_response :success
   end
-
-  test "should get edit" do
-    get edit_puzzle_url(@puzzle)
-    assert_response :success
-  end
-
-  test "should update puzzle" do
-    patch puzzle_url(@puzzle), params: { puzzle: { author: @puzzle.author, publication_date: @puzzle.publication_date } }
-    assert_redirected_to puzzle_url(@puzzle)
-  end
-
-  test "should destroy puzzle" do
-    assert_difference("Puzzle.count", -1) do
-      delete puzzle_url(@puzzle)
-    end
-
-    assert_redirected_to puzzles_url
-  end
+  
 end

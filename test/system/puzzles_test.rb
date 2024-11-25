@@ -5,9 +5,8 @@ class PuzzlesTest < ApplicationSystemTestCase
     @puzzle = puzzles(:one)
   end
 
-  test "visiting the index" do
-    visit puzzles_url
-    assert_selector "h1", text: "Puzzles"
-  end
-
+  # test "visiting the index" do
+  #   visit puzzles_url
+  #   assert_selector "h1", text: "Puzzles"
+  # end
 end

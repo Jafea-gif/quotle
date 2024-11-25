@@ -17,5 +17,4 @@ class GuessesTest < ApplicationSystemTestCase
     # assert_text "Guess was successfully created"
     # click_on "Back"
   end
-
 end

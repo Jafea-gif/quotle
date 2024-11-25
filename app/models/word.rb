@@ -16,9 +16,8 @@
 class Word < ApplicationRecord
     belongs_to :puzzle
     has_many :guesses
-    
-        def guessed? 
-        guesses.find_by(correct:true).present?
-        end
 
+        def guessed?
+        guesses.find_by(correct: true).present?
+        end
 end

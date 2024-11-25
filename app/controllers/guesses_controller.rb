@@ -1,10 +1,9 @@
 class GuessesController < ApplicationController
-
   # POST /guesses or /guesses.json
   def create
     @guess = Guess.create(guess_params)
     if @guess.correct?
-      @guess.update(correct:true)
+      @guess.update(correct: true)
       redirect_to @guess.word.puzzle, notice: "GOT IT"
     else
       redirect_to @guess.word, notice: "Try again"

@@ -38,7 +38,7 @@ gem "bootsnap", require: false
 gem "annotate"
 gem "rails-erd"
 
-gem "devise" , "~> 4.9" , ">=4.9.4"
+gem "devise", "~> 4.9", ">=4.9.4"
 
 gem "byebug"
 

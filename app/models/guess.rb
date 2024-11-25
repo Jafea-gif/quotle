@@ -24,7 +24,7 @@ class Guess < ApplicationRecord
   belongs_to :user
   belongs_to :word
 
-  def correct? 
+  def correct?
     input_guess.upcase == word.name.upcase
   end
 
@@ -32,7 +32,7 @@ class Guess < ApplicationRecord
     guess_letters = input_guess.upcase.split("")
     word_letters = word.name.upcase.split("")
     letter_classes = []
-    guess_letters.each_with_index do |letter,index| 
+    guess_letters.each_with_index do |letter, index|
       if letter == word_letters[index]
         letter_classes << "correct"
       elsif word_letters.include?(letter)
@@ -40,14 +40,13 @@ class Guess < ApplicationRecord
       else
         letter_classes << "wrong"
       end
-
-    end 
+    end
   letter_classes
   end
-  
+
   def prettify
-    html_string = ''
-    guess_letters = input_guess.downcase.split('')
+    html_string = ""
+    guess_letters = input_guess.downcase.split("")
     letter_classes = check_letters
     guess_letters.each_with_index do |letter, ind|
       html_string.concat("<span class='", letter_classes[ind], "'>", letter, "</span>")

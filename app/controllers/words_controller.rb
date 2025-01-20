@@ -1,4 +1,5 @@
 class WordsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_word, only: %i[ show ]
 
   # GET /words/1 or /words/1.json

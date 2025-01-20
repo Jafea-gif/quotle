@@ -1,8 +1,12 @@
 <% content_for :title, "Puzzles" %>
 
+<main>
 <h1>Today's Puzzle</h1>
 
 <div id="puzzles">
     <%= render @puzzle %>
 </div>
-
+</main>
+<footer>
+  <%= render "puzzles/about" %>
+</footer>

@@ -7,6 +7,6 @@
   <% unless @word.guessed? %>
     <%= render 'guesses/form', word: @word %>
   <% end %>
-  <%= link_to "Back",@word.puzzle %>
+  <%= link_to "Back", puzzles_path %>
 </div>
 

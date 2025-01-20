@@ -19,6 +19,7 @@ body {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.8rem;
+  height: 100vh;
 }
 
 input {
@@ -43,8 +44,17 @@ a:visited {
 }
 
 header {
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
+}
+
+footer {
+  padding: 2rem;
+  position: absolute;
+  font-size: .9rem;
+  text-align: justify;
+  bottom: 0;
 }
 
 h1,
@@ -78,10 +88,9 @@ h1,
 }
 
 
-
-.wrong,
-.correct,
-.misplaced,
+#guesses .wrong,
+#guesses .correct,
+#guesses .misplaced,
 .letters>input {
   text-transform: uppercase;
   font-size: 2rem;

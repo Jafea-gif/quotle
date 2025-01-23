@@ -123,8 +123,8 @@ h1,
   vertical-align: middle;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   body {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }

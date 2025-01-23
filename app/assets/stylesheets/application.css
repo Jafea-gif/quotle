@@ -43,7 +43,8 @@ a:visited {
   color: #6fdf6f;
 }
 
-a:link .important {
+a:link.important,
+a:visited.important {
   font-weight: bold;
   color: #ffffff;
 }

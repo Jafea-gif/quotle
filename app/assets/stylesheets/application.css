@@ -43,6 +43,11 @@ a:visited {
   color: #6fdf6f;
 }
 
+a:link .important {
+  font-weight: bold;
+  color: #ffffff;
+}
+
 header {
   padding: 2rem;
   display: flex;
